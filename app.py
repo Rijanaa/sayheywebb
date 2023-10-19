@@ -14,6 +14,10 @@ def index():
 def greet():
 	flash('hi' + str(request.form[' name_input '])+", great tto see you")
 	return render_template('index.html')
+
+
+if __name__=="__main__":
+	app().run()
 #to make file and add app : app in it  write this in cmd
 # echo >  Procfile
 #to make requirements file and get them automatically  write this in cmd
